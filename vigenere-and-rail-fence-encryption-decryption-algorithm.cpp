@@ -176,7 +176,7 @@ void userInterface(){
     cin >> keyText;
     
     cout << "\nDecrypted message: ";
-    cout << vigenereDecryption(railFenceDecryption(cipherText, keyNumber), keyText);
+    cout << vigenereDecryption(railFenceDecryption(cipherText, keyNumber), keyText) << endl;
     
     userInterface();
   }
@@ -187,7 +187,7 @@ void userInterface(){
     userInterface();
   }
 }
-
+OSWXMTFBACGWCUC
 int main() 
 {
     cout << "\nWELCOME TO VIGENERE AND RAIL FENCE ENCRYPTOR DECRYPTOR PROGRAM" << endl;
