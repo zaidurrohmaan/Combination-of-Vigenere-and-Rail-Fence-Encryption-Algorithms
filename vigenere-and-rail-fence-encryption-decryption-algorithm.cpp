@@ -135,13 +135,63 @@ string railFenceDecryption(string cipherText, int key){
   return plainText;
 }
 
+void userInterface(){
+  cout << "\nWhat would you do?";
+  cout << "\n1 -> Encrypt";
+  cout << "\n2 -> Decrypt";
+  cout << "\n3 -> Exit\n";
+  
+  int n;
+  cin >> n;
+  
+  if(n == 1){
+    cout << "\nInput the message you want to encrypt:\n";
+    string plainText;
+    cin >> plainText;
+    
+    cout << "\nInput the key text to encrypt the message using Vigenere algorithm:\n";
+    string keyText;
+    cin >> keyText;
+    
+    cout << "\nInput the key number to encrypt the message using Rail Fence algorithm:\n";
+    int keyNumber;
+    cin >> keyNumber;
+    
+    cout << "\nEncrypted message: ";
+    cout << railFenceEncryption(vigenereEncryption(plainText, keyText), keyNumber) << endl;
+    
+    userInterface();
+  }
+  else if(n == 2){
+    cout << "\nInput the message you want to decrypt:\n";
+    string cipherText;
+    cin >> cipherText;
+    
+    cout << "\nInput the key number to decrypt the message:\n";
+    int keyNumber;
+    cin >> keyNumber;
+    
+    cout << "\nInput the key text to decrypt the message:\n";
+    string keyText;
+    cin >> keyText;
+    
+    cout << "\nDecrypted message: ";
+    cout << vigenereDecryption(railFenceDecryption(cipherText, keyNumber), keyText);
+    
+    userInterface();
+  }
+  else if(n == 3){
+    cout << "\nYou're exited from the program";
+  }
+  else{
+    userInterface();
+  }
+}
+
 int main() 
 {
-    cout << vigenereEncryption("COMPUTERSCIENCE", "MYKEY");
-    cout << endl;
-    cout << vigenereDecryption("OMWTSFCBWAUCXGC", "MYKEY");
-    cout << endl;
-    cout << railFenceEncryption("GEEKSFORGEEKS", 4);
-    cout << endl;
-    cout << railFenceDecryption("GOSEFRKESGEKE", 4);
+    cout << "\nWELCOME TO VIGENERE AND RAIL FENCE ENCRYPTOR DECRYPTOR PROGRAM" << endl;
+    cout << "==============================================================\n";
+    
+    userInterface();
 }
