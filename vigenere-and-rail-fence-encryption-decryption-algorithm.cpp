@@ -105,7 +105,6 @@ string railFenceDecryption(string cipherText, int key){
     else row--;
   }
   
-  
   int indeks = 0;
   for(int i=0; i<key; i++){
     for(int j=0; j<len; j++){
@@ -115,7 +114,6 @@ string railFenceDecryption(string cipherText, int key){
       }
     }
   }
-  
   
   row = 0, col = 0;
   dirDown = false;
