@@ -187,7 +187,7 @@ void userInterface(){
     userInterface();
   }
 }
-OSWXMTFBACGWCUC
+
 int main() 
 {
     cout << "\nWELCOME TO VIGENERE AND RAIL FENCE ENCRYPTOR DECRYPTOR PROGRAM" << endl;
