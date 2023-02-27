@@ -88,7 +88,6 @@ string railFenceEncryption(string plainText, int key){
   }
   
   return cipherText;
-  
 }
 
 string railFenceDecryption(string cipherText, int key){
