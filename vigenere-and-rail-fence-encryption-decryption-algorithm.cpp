@@ -1,17 +1,3 @@
-/*
-Created to fulfill the assignment of the Cryptography and Information Security course.
-
-Creator:
-1. Fidzal Adrian
-2. Raditya Rifan Zaidan
-3. Rama Banin Maula
-4. Zaidurrohman
-
-References:
-1. Vigenere Algorithm: Lecturer slides
-2. Rail Fence Algorithm: https://www.geeksforgeeks.org/rail-fence-cipher-encryption-decryption/
-*/
-
 #include <bits/stdc++.h>
 using namespace std;
 
