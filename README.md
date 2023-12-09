@@ -1,4 +1,4 @@
-# Kriptografi-dan-Keamanan-Informasi
+# Combination of Vigenere and Rail Fence Encryption Algorithms
 
 Created to fulfill assignments in Cryptography and Information Security courses (UGM)
 
